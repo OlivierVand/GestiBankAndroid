@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GestiBank">
-        <activity android:name=".Comptes"></activity>
+        <activity android:name=".ConvertionDevise"></activity>
+        <activity android:name=".motDePasse" />
+        <activity android:name=".Virement" />
+        <activity android:name=".Comptes" />
         <activity android:name=".Accueil" />
         <activity android:name=".creationCompte" />
         <activity android:name=".MainActivity">
