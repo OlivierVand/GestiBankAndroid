@@ -1,63 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.sip.gestibank.MainActivity"
+    android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewLogo"
+        android:layout_gravity="center_horizontal"
         android:layout_width="175dp"
         android:layout_height="126dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginRight="116dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/gestibank" />
-
-    <SearchView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="109dp"
-        tools:layout_editor_absoluteY="-16dp" />
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/gestibank" />
 
     <TextView
         android:id="@+id/textViewCreerCompte"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
-        android:layout_marginLeft="92dp"
-        android:layout_marginTop="44dp"
-        android:text="Créer un compte"
-        android:textSize="30sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <EditText
-        android:id="@+id/editIdentifiant"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="184dp"
-        android:layout_marginLeft="184dp"
-        android:layout_marginTop="104dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Identifiant"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCreerCompte" />
-
-    <EditText
-        android:id="@+id/editMdp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Mot de passe"
-        app:layout_constraintStart_toStartOf="@+id/editIdentifiant"
-        app:layout_constraintTop_toBottomOf="@+id/editIdentifiant" />
+        android:background="#99F7931A"
+        android:text="Créer un compte"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        tools:context="com.sip.gestibank.MainActivity"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewIdentifiant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:inputType="textPersonName"
+            android:text="Identifiant :"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/editIdentifiant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entrez Votre identifiant"
+            android:textSize="14dp"
+            android:layout_marginLeft="55dp"
+            android:inputType="textPersonName" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textViewTrouverIdentifiant"
@@ -65,62 +60,94 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="116dp"
         android:layout_marginLeft="116dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="10dp"
         android:linksClickable="false"
         android:text="Où trouver mon identifiant ?"
         android:textColor="#F7931A"
         android:textColorHighlight="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editMdp" />
+        />
 
-    <TextView
-        android:id="@+id/textViewIdentifiant"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
-        android:text="Identifiant :"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toStartOf="@+id/editIdentifiant"
-        app:layout_constraintTop_toTopOf="@+id/editIdentifiant" />
+        android:layout_marginTop="20dp"
+        tools:context="com.sip.gestibank.MainActivity"
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textViewMDP"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginRight="44dp"
-        android:text="Mot de passe :"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toStartOf="@+id/editMdp"
-        app:layout_constraintTop_toTopOf="@+id/editMdp" />
+        <TextView
+            android:id="@+id/textViewMDP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Mot de passe :"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/editMdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Entrez votre mot de passe:"
+            android:textSize="14dp"
+            android:layout_marginLeft="30dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
 
     <Button
-        android:id="@+id/buttonOk"
+        android:id="@+id/buttonOK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginLeft="164dp"
-        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
         android:text="OK"
         android:textColor="#000000"
+        android:onClick="callSAccueil"
         app:backgroundTint="#F7931A"
-        app:layout_constraintStart_toEndOf="@+id/textViewMDP"
-        app:layout_constraintTop_toBottomOf="@+id/editMdp" />
+         />
 
     <Button
         android:id="@+id/buttonConversion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginRight="116dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:onClick="callSDevise"
         android:text="Conversion de devise"
         app:backgroundTint="#99F7931A"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTrouverIdentifiant" />
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        tools:context="com.sip.gestibank.MainActivity"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonUrgence"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Urgence"
+            app:backgroundTint="#99F7931A"
+            />
+
+        <Button
+            android:id="@+id/buttonInfosLegale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:text="Infos Légales"
+            app:backgroundTint="#99F7931A"
+            />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

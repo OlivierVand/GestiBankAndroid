@@ -1,9 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ConvertionDevise">
+    tools:context="com.sip.gestibank.ConvertionDevise"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="175dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/gestibank" />
+
+    <TextView
+        android:id="@+id/textViewConversionDevise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#99F7931A"
+        android:text="Convertir une devise"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:context="com.sip.gestibank.MainActivity"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewUSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:inputType="textPersonName"
+            android:text="USD :"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/editDollars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" $"
+            android:textSize="14dp"
+            android:layout_marginLeft="55dp"
+            android:inputType="number" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        tools:context="com.sip.gestibank.MainActivity"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:inputType="textPersonName"
+            android:text="Euros :"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textViewConverti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:inputType="textPersonName"
+            android:text="€"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewTaux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:text="Le taux est de 1.2 USD/Eur"
+        android:textColor="#000000" />
+
+</LinearLayout>

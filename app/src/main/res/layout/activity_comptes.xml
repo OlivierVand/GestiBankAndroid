@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Comptes">
+    tools:context="com.sip.gestibank.Comptes"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="175dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/gestibank" />
+
+    <TextView
+        android:id="@+id/textViewCreerCompte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#99F7931A"
+        android:text="Mes Comptes"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+
+
+
+</LinearLayout>
