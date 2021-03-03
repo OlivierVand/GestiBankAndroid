@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sip.gestibank.creationCompte"
+    tools:context="com.sip.gestibank.Login"
     android:orientation="vertical">
 
     <ImageView
@@ -23,34 +23,10 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:background="#99F7931A"
-        android:text="Créer un compte"
+        android:text="Connexion"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30sp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        tools:context="com.sip.gestibank.creationCompte"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textViewName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:inputType="textPersonName"
-            android:text="Nom :"
-            android:textColor="#000000" />
-
-        <EditText
-            android:id="@+id/editName"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:inputType="textPersonName" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -65,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:inputType="textPersonName"
-            android:text="Email : "
+            android:text="Email :"
             android:textColor="#000000" />
 
         <EditText
@@ -73,7 +49,7 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:textSize="14dp"
-            android:layout_marginLeft="53dp"
+            android:layout_marginLeft="70dp"
             android:inputType="textPersonName" />
     </LinearLayout>
 
@@ -85,35 +61,49 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/textViewTel"
+            android:id="@+id/textViewMDP"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
-            android:inputType="textPersonName"
-            android:text="Téléphone :"
+            android:text="Mot de passe :"
             android:textColor="#000000" />
 
         <EditText
-            android:id="@+id/editTel"
+            android:id="@+id/editMdp"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:inputType="textPersonName"
             android:textSize="14dp"
-            android:layout_marginLeft="25dp"
-            android:inputType="textPersonName" />
+            android:layout_marginLeft="20dp"
+            />
+
+
+
     </LinearLayout>
 
-
+    <TextView
+        android:id="@+id/textViewTrouverIdentifiant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="20dp"
+        android:linksClickable="false"
+        android:text="Mot de passe oublié ?"
+        android:textColor="#F7931A"
+        android:textColorHighlight="#FFFFFF"
+        />
 
 
     <Button
-        android:id="@+id/buttonNewAccount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/buttonOK"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="70dp"
         android:text="Valider"
         android:textColor="#000000"
-        android:onClick="addNewClient"
+        android:onClick="callSChargement"
         app:backgroundTint="#F7931A"
         />
 

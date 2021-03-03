@@ -53,7 +53,7 @@ public class Accueil extends AppCompatActivity {
     }
 
     public void callSChargement(View view){
-        Intent i = new Intent(getApplicationContext(), Chargement.class);
+        Intent i = new Intent(getApplicationContext(), Login.class);
         startActivity(i);
     }
 }

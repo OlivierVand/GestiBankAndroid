@@ -23,4 +23,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(), ConvertionDevise.class);
         startActivity(i);
     }
+
+    public void callSCreationCompte(View view){
+        Intent i = new Intent(getApplicationContext(), creationCompte.class);
+        startActivity(i);
+    }
 }

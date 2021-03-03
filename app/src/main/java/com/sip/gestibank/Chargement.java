@@ -37,7 +37,7 @@ public class Chargement extends AppCompatActivity {
                 Intent i = new Intent(getApplicationContext(), Comptes.class);
                 startActivity(i);
             }
-        }, 4000);
+        }, 3000);
 
     }
 
