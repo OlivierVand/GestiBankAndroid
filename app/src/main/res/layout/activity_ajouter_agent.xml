@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com."
+    tools:context="com.sip.gestibank.AjouterAgent"
     android:orientation="vertical">
 
     <ImageView
@@ -23,64 +23,49 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:background="#FFC107"
-        android:text="CREER UN COMPTE"
+        android:text="AJOUTER UN AGENT"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="30sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        tools:context="com.sip.gestibank.creationCompte"
-        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/editName"
-            android:layout_width="314dp"
+            android:layout_width="316dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="60dp"
-            android:layout_marginLeft="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
             android:inputType="textPersonName"
-            android:text="Nom" />
-    </LinearLayout>
+            android:hint="Nom"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:text="Téléphone"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        tools:context="com.sip.gestibank.creationCompte"
-        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/editEmail"
-            android:layout_width="314dp"
+            android:layout_width="316dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
             android:inputType="textPersonName"
-            android:text="E-mail"
-            android:textSize="14dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        tools:context="com.sip.gestibank.creationCompte"
-        android:orientation="horizontal">
+            android:hint="E-mail"
+            />
 
         <EditText
             android:id="@+id/editTel"
             android:layout_width="316dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"
-            android:inputType="textPersonName"
-            android:text="Téléphone"
-            android:textSize="14dp" />
-    </LinearLayout>
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:inputType="number"
+            android:hint="Téléphone"/>
+
+        <EditText
+            android:id="@+id/editNagent"
+            android:layout_width="316dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:inputType="number"
+            android:hint="N° agent"/>
 
 
     <Button
@@ -89,13 +74,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:onClick="addNewClient"
-        android:text="Valider"
+        android:onClick="addNewAgent"
+        android:text="Ajouter"
         android:textColor="#000000"
         app:backgroundTint="#FFC107" />
 
 
 </LinearLayout>
-
-
-

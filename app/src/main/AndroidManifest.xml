@@ -10,9 +10,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/Theme.GestiBank">
-        <activity android:name=".Agent"></activity>
+        android:theme="@style/Theme.GestiBank"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".AjouterAgent"></activity>
+        <activity android:name=".ListeDemande" />
+        <activity android:name=".Agent" />
         <activity android:name=".Admin" />
         <activity android:name=".Login" />
         <activity android:name=".Chargement" />

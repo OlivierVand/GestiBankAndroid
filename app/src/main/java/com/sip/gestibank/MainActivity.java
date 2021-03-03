@@ -28,4 +28,10 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(getApplicationContext(), creationCompte.class);
         startActivity(i);
     }
+
+    public void callAdmin(View view){
+        Intent i = new Intent(getApplicationContext(), Admin.class);
+        startActivity(i);
+    }
+
 }

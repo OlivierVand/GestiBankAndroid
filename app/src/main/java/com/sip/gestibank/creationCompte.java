@@ -64,35 +64,7 @@ public class creationCompte extends AppCompatActivity {
     }
 
 
-    public void getClientsList(View v){
-        Call<List<Client>> call = clientService.getClients();
-        call.enqueue(new Callback<List<Client>>() {
-            @Override
-            public void onResponse(Call<List<Client>> call, Response<List<Client>> response) {
-                if(response.isSuccessful()){
-                    list = response.body();
-                    Log.i("Data: ", list.toString());
 
-                    StringBuffer buffer=new StringBuffer();
-                    for (Client user : list)
-                    {
-
-                        buffer.append("Name: "+user.getName()+"\n");
-                        buffer.append("Email: "+user.getEmail()+"\n\n");
-
-                    }
-                    showMessage("Clients List", buffer.toString());
-
-                    // listView.setAdapter(new UserAdapter(MainActivity.this, R.layout.list_user, list));
-                }
-            }
-
-            @Override
-            public void onFailure(Call<List<Client>> call, Throwable t) {
-                Log.e("ERROR: ", t.getMessage());
-            }
-        });
-    }
 
 
     public void showMessage(String title,String message)

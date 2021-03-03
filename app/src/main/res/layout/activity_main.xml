@@ -63,6 +63,16 @@
         app:backgroundTint="#99F7931A"
         />
 
+    <Button
+        android:id="@+id/buttonTESTADMIN"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:onClick="callAdmin"
+        android:text="TEST ADMIN"
+        app:backgroundTint="#3B3FBC90" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -77,6 +87,7 @@
             android:text="Urgence"
             app:backgroundTint="#99F7931A"
             />
+
 
         <Button
             android:id="@+id/buttonInfosLegale"
