@@ -17,19 +17,22 @@
             android:layout_marginTop="20dp"
             app:srcCompat="@drawable/gestibank" />
 
-        <TextView
-            android:id="@+id/textViewCreerCompte"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
-            android:background="#FFC107"
-            android:text="LISTE DES DEMANDES"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="30sp" />
+            <TextView
+                android:id="@+id/textViewCreerCompte"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="#F7931A"
+                android:text="LISTE DES DEMANDES"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
 
-        <LinearLayout
+
+
+
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"

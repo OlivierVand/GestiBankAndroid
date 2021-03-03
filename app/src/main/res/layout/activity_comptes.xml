@@ -10,9 +10,9 @@
 
     <ImageView
         android:id="@+id/imageViewLogo"
-        android:layout_gravity="center_horizontal"
         android:layout_width="175dp"
-        android:layout_height="50dp"
+        android:layout_height="126dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         app:srcCompat="@drawable/gestibank" />
 
@@ -22,10 +22,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:background="#99F7931A"
-        android:text="Mes Comptes"
+        android:background="#F7931A"
+        android:text="MES COMPTES"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="30sp" />
 
 </LinearLayout>

@@ -10,9 +10,9 @@
 
     <ImageView
         android:id="@+id/imageViewLogo"
-        android:layout_gravity="center_horizontal"
         android:layout_width="175dp"
         android:layout_height="126dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         app:srcCompat="@drawable/gestibank" />
 
@@ -22,10 +22,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:background="#FFC107"
+        android:background="#F7931A"
         android:text="CREER UN COMPTE"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="30sp" />
 
     <LinearLayout
@@ -42,7 +42,7 @@
             android:layout_marginRight="60dp"
             android:layout_marginLeft="60dp"
             android:inputType="textPersonName"
-            android:text="Nom" />
+            android:hint="Nom" />
     </LinearLayout>
 
     <LinearLayout
@@ -60,7 +60,7 @@
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"
             android:inputType="textPersonName"
-            android:text="E-mail"
+            android:hint="E-mail"
             android:textSize="14dp" />
     </LinearLayout>
 
@@ -78,7 +78,7 @@
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"
             android:inputType="textPersonName"
-            android:text="Téléphone"
+            android:hint="Téléphone"
             android:textSize="14dp" />
     </LinearLayout>
 
@@ -91,11 +91,15 @@
         android:layout_marginTop="50dp"
         android:onClick="addNewClient"
         android:text="Valider"
-        android:textColor="#000000"
-        app:backgroundTint="#FFC107" />
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#F7931A" />
 
 
 </LinearLayout>
+
+
+
+
 
 
 

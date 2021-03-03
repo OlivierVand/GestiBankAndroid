@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GestiBank"
         android:usesCleartextTraffic="true">
-        <activity android:name=".AjouterAgent"></activity>
+        <activity android:name=".CustomListView"></activity>
+        <activity android:name=".AjouterAgent" />
         <activity android:name=".ListeDemande" />
         <activity android:name=".Agent" />
         <activity android:name=".Admin" />

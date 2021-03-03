@@ -9,22 +9,24 @@
     android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/imageViewLogo"
-        android:layout_gravity="center_horizontal"
+        android:id="@+id/Logo"
         android:layout_width="175dp"
         android:layout_height="126dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         app:srcCompat="@drawable/gestibank" />
+
 
     <TextView
         android:id="@+id/textViewMaRegion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:text="Ma région :"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#000000"
-        android:textSize="24sp"/>
+        android:textSize="24sp" />
 
     <Spinner
         android:id="@+id/spinnerRegion"
@@ -39,36 +41,36 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:text="Accéder à mon compte"
         android:onClick="callSChargement"
-         />
+        android:text="Accéder à mon compte"
+        app:backgroundTint="#F7931A" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="278dp"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/image1" />
+
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="119dp"
-        android:layout_marginTop="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
         android:orientation="horizontal"
         tools:context="com.sip.gestibank.MainActivity">
 
-        <Button
-            android:id="@+id/buttonUrgence"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Urgence"
-            app:backgroundTint="#99F7931A" />
-
-        <Button
-            android:id="@+id/buttonInfosLegale"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="120dp"
-            android:text="Infos Légales"
-            app:backgroundTint="#99F7931A"
-            />
 
 
     </LinearLayout>
 
 
 </LinearLayout>
+
+
+
+
+
+
+

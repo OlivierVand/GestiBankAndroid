@@ -10,9 +10,9 @@
 
     <ImageView
         android:id="@+id/imageViewLogo"
-        android:layout_gravity="center_horizontal"
         android:layout_width="175dp"
         android:layout_height="126dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         app:srcCompat="@drawable/gestibank" />
 
@@ -22,10 +22,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:background="#99F7931A"
-        android:text="Convertir une devise"
+        android:background="#F7931A"
+        android:text="CONVERTIR UNE DEVISE"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="30sp" />
 
     <LinearLayout
@@ -40,18 +40,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
+            android:autoText="false"
             android:inputType="textPersonName"
             android:text="USD :"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textSize="30sp" />
 
         <EditText
             android:id="@+id/editDollars"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" $"
-            android:textSize="14dp"
             android:layout_marginLeft="55dp"
-            android:inputType="number" />
+            android:inputType="number"
+            android:text=" $"
+            android:textSize="30sp" />
     </LinearLayout>
 
 
@@ -70,7 +72,8 @@
             android:layout_marginLeft="30dp"
             android:inputType="textPersonName"
             android:text="Euros :"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/textViewConverti"
@@ -79,7 +82,8 @@
             android:layout_marginLeft="30dp"
             android:inputType="textPersonName"
             android:text="€"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textSize="30sp" />
     </LinearLayout>
 
     <TextView
@@ -90,6 +94,13 @@
         android:layout_marginTop="30dp"
         android:inputType="textPersonName"
         android:text="Le taux est de 1.2 USD/Eur"
-        android:textColor="#000000" />
+        android:textColor="#F7931A"
+        android:textSize="18sp" />
 
 </LinearLayout>
+
+
+
+
+
+

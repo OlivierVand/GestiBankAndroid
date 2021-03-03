@@ -10,9 +10,9 @@
 
     <ImageView
         android:id="@+id/imageViewLogo"
-        android:layout_gravity="center_horizontal"
         android:layout_width="175dp"
         android:layout_height="126dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         app:srcCompat="@drawable/gestibank" />
 
@@ -22,50 +22,50 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:background="#FFC107"
+        android:background="#F7931A"
         android:text="AJOUTER UN AGENT"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="#FFFFFF"
         android:textSize="30sp" />
 
 
-        <EditText
-            android:id="@+id/editName"
-            android:layout_width="316dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:inputType="textPersonName"
-            android:hint="Nom"/>
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:hint="Nom"/>
 
 
-        <EditText
-            android:id="@+id/editEmail"
-            android:layout_width="316dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal"
-            android:inputType="textPersonName"
-            android:hint="E-mail"
-            />
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:inputType="textPersonName"
+        android:hint="E-mail"
+        />
 
-        <EditText
-            android:id="@+id/editTel"
-            android:layout_width="316dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal"
-            android:inputType="number"
-            android:hint="Téléphone"/>
+    <EditText
+        android:id="@+id/editTel"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:inputType="number"
+        android:hint="Téléphone"/>
 
-        <EditText
-            android:id="@+id/editNagent"
-            android:layout_width="316dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center_horizontal"
-            android:inputType="number"
-            android:hint="N° agent"/>
+    <EditText
+        android:id="@+id/editNagent"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:inputType="number"
+        android:hint="N° agent"/>
 
 
     <Button
@@ -76,8 +76,15 @@
         android:layout_marginTop="50dp"
         android:onClick="addNewAgent"
         android:text="Ajouter"
-        android:textColor="#000000"
-        app:backgroundTint="#FFC107" />
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#F7931A" />
 
 
 </LinearLayout>
+
+
+
+
+
+
+
