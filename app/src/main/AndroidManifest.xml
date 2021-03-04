@@ -24,6 +24,8 @@
         <activity android:name=".Virement" />
         <activity android:name=".Comptes" />
         <activity android:name=".Accueil" />
+        <activity android:name=".ChargementAdmin" />
+        <activity android:name=".ChargementAgent" />
         <activity android:name=".creationCompte" />
         <activity android:name=".MainActivity">
             <intent-filter>

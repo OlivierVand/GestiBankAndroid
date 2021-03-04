@@ -34,6 +34,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
         android:onClick="callListeDemande"
+        android:background="@drawable/rounded_corners"
         android:text="Consulter les demandes"
         app:backgroundTint="#F7931A"
         app:layout_constraintHorizontal_bias="0.497"
@@ -42,6 +43,7 @@
     <Button
         android:id="@+id/button7"
         android:layout_width="250dp"
+        android:background="@drawable/rounded_corners"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="80dp"
@@ -52,6 +54,7 @@
     <Button
         android:id="@+id/button8"
         android:layout_width="250dp"
+        android:background="@drawable/rounded_corners"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="80dp"

@@ -1,12 +1,9 @@
 package com.sip.gestibank.model;
 
-
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Client  {
-
-
+public class User  {
 
     @SerializedName("name")
     @Expose
@@ -16,33 +13,26 @@ public class Client  {
     @Expose
     private String email;
 
-    @SerializedName("tel")
-    @Expose
-    private String tel;
 
     @SerializedName("role")
     @Expose
     private String role;
 
-    @SerializedName("status")
-    @Expose
-    private String status;
-
     @SerializedName("password")
     @Expose
     private String password;
 
+    @SerializedName("tel")
+    @Expose
+    private String tel;
 
-    public Client() {
-    }
 
-    public Client(String name, String email, String tel)
+    public User(String name, String email, String password, String tel)
     {
         this.name = name;
         this.email = email;
         this.tel = tel;
         this.role = "CLIENT";
-        this.status = "EN ATTENTE";
         this.password = "";
     }
 
@@ -62,28 +52,12 @@ public class Client  {
         this.email = email;
     }
 
-    public String getTel() {
-        return tel;
-    }
-
-    public void setTel(String tel) {
-        this.tel = tel;
-    }
-
     public String getRole() {
         return role;
     }
 
     public void setRole(String role) {
         this.role = role;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
     }
 
     public String getPassword() {
@@ -94,17 +68,12 @@ public class Client  {
         this.password = password;
     }
 
-    @Override
-    public String toString()
-    {
-        return "Client{" +
-                "name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", tel='" + tel + '\'' +
-                ", role='" + role + '\'' +
-                ", status='" + status + '\'' +
-                ", password='" + password + '\'' +
-                '}';
+    public String getTel() {
+        return tel;
     }
 
+    public void setTel(String tel) {
+        this.tel = tel;
+    }
 }
+

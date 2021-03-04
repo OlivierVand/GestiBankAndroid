@@ -37,14 +37,16 @@
 
     <Button
         android:id="@+id/buttonAccederCompte"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_corners"
         android:onClick="callSChargement"
+        android:textColor="#FFFFFF"
         android:text="Accéder à mon compte"
-        app:backgroundTint="#F7931A" />
-
+        app:backgroundTint="#F7931A"
+        />
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="match_parent"

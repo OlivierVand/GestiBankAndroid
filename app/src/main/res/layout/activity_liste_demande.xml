@@ -30,7 +30,12 @@
                 android:textSize="30sp" />
 
 
-
+    <Button
+        android:id="@+id/btnTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getClient"
+        android:text="Button" />
 
     <LinearLayout
             android:layout_width="match_parent"

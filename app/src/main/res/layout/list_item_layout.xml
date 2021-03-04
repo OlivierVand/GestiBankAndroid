@@ -16,6 +16,7 @@
         android:id="@+id/textView_Name"
         android:layout_width="150dp"
         android:layout_height="50dp"
+
         android:layout_marginLeft="10dp"
         android:text="Olivier Vandamme"
         android:textSize="12sp"
@@ -34,6 +35,7 @@
         android:id="@+id/button_ValiderLeCompte"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
         android:text="Valider"
         android:textSize="10dp"
         android:textColor="#FFFFFF"

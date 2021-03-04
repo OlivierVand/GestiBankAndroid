@@ -29,8 +29,9 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
         android:layout_marginBottom="52dp"
         android:text="CHANGER MOT DE PASSE"
         app:backgroundTint="#F7931A"
@@ -41,8 +42,9 @@
 
     <Button
         android:id="@+id/button6"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corners"
         android:layout_marginBottom="100dp"
         android:text="GERER LES CHEQUIERS"
         app:backgroundTint="#F7931A"
@@ -53,7 +55,8 @@
 
     <Button
         android:id="@+id/button9"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
+        android:background="@drawable/rounded_corners"
         android:layout_height="wrap_content"
         android:text="GERER LES DEMANDES"
         app:backgroundTint="#F7931A"

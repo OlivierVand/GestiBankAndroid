@@ -49,7 +49,7 @@ public class CustomListAdapter extends BaseAdapter{
         }
 
         ListeClientEnAttente listeClientEnAttente = this.listData.get(position);
-        holder.ListeClientNom.setText(listeClientEnAttente.getNom());
+        holder.ListeClientNom.setText(listeClientEnAttente.getName());
         holder.ListeClientEmail.setText(listeClientEnAttente.getEmail());
         return convertView;
     }

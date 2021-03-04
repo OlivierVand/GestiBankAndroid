@@ -1,5 +1,6 @@
 package com.sip.gestibank.remote;
 
+import com.sip.gestibank.ListeClientEnAttente;
 import com.sip.gestibank.model.Client;
 
 import java.util.List;
@@ -14,7 +15,7 @@ public interface ClientService {
     Call<List<Client>> getClients();
 
     @GET("list/attente")
-    Call<List<Client>> getClientsEnAttentes();
+    Call<List<ListeClientEnAttente>> getClientsEnAttentes();
 
     @GET("list/valide")
     Call<List<Client>> getClientsValides();
