@@ -104,7 +104,10 @@ public void dashboardUser(View v) {
     }
  }
 
-
+    public void callCompte(View view){
+        Intent i = new Intent(Login.this, Comptes.class);
+        startActivity(i);
+    }
 
 
 

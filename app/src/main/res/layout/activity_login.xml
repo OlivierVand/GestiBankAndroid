@@ -109,6 +109,18 @@
         app:backgroundTint="#F7931A" />
 
 
+    <Button
+        android:id="@+id/buttonTestConnection"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_corners"
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp"
+        android:onClick="callCompte"
+        android:text="Test"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#800A4E4E" />
 
 
 

@@ -28,74 +28,94 @@
         android:textColor="@color/white"
         android:textSize="30sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        tools:context="com.sip.gestibank.MainActivity"
-        android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textViewUSD"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:autoText="false"
-            android:inputType="textPersonName"
-            android:text="USD :"
-            android:textColor="#000000"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/editDollars"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="55dp"
-            android:inputType="number"
-            android:text=" $"
-            android:textSize="30sp" />
-    </LinearLayout>
-
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        tools:context="com.sip.gestibank.MainActivity"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textViewCurrency"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:inputType="textPersonName"
-            android:text="Euros :"
-            android:textColor="#000000"
-            android:textSize="30sp" />
-
-        <TextView
-            android:id="@+id/textViewConverti"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:inputType="textPersonName"
-            android:text="€"
-            android:textColor="#000000"
-            android:textSize="30sp" />
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textViewTaux"
+    <Button
+        android:id="@+id/btnCurrency"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
+        android:onClick="getCurrency"
+        android:text="Get Currency"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.875" />
+
+    <TextView
+        android:id="@+id/val"
+        android:layout_width="207dp"
+        android:layout_height="61dp"
+        android:text="Taper une valeur"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414" />
+
+    <TextView
+        android:id="@+id/val2"
+        android:layout_width="317dp"
+        android:layout_height="56dp"
+        android:text="Choisir une Devise cible"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.052" />
+
+    <EditText
+        android:id="@+id/myInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
         android:inputType="textPersonName"
-        android:text="Le taux est de 1.2 USD/Eur"
-        android:textColor="#F7931A"
-        android:textSize="18sp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <TextView
+        android:id="@+id/textViewRes"
+        android:layout_width="234dp"
+        android:layout_height="64dp"
+        android:text="Resultat Conversion:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.713" />
+
+    <RadioGroup
+        android:id="@+id/devise"
+        android:layout_width="119dp"
+        android:layout_height="142dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229">
+
+        <RadioButton
+            android:id="@+id/deviseEur"
+            android:layout_width="98dp"
+            android:layout_height="66dp"
+            android:text="EUR" />
+
+        <RadioButton
+            android:id="@+id/deviseTnd"
+            android:layout_width="98dp"
+            android:layout_height="62dp"
+            android:text="TND" />
+
+    </RadioGroup>
 
 </LinearLayout>
 
