@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.sip.gestibank.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_virements"
+        android:name="com.sip.gestibank.ui.virement.VirementFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_virement" />
+
+    <fragment
+        android:id="@+id/nav_carte"
+        android:name="com.sip.gestibank.ui.carte.CarteFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_carte" />
+
+    <fragment
+        android:id="@+id/nav_cheque"
+        android:name="com.sip.gestibank.ui.cheque.ChequeFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_cheque" />
+
+    <fragment
+        android:id="@+id/nav_iban"
+        android:name="com.sip.gestibank.ui.iban.IbanFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_iban" />
+
+
+    <fragment
+        android:id="@+id/nav_document"
+        android:name="com.sip.gestibank.ui.document.DocumentFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_document" />
+
+    <fragment
+        android:id="@+id/nav_credit"
+        android:name="com.sip.gestibank.ui.credit.CreditFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_credit" />
+
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.sip.gestibank.ui.contact.ContactFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_contact" />
+
+    <fragment
+        android:id="@+id/nav_assurance"
+        android:name="com.sip.gestibank.ui.assurance.AssuranceFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_assurance" />
+
+    <fragment
+        android:id="@+id/nav_reglage"
+        android:name="com.sip.gestibank.ui.reglage.ReglageFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_reglage"/>
+</navigation>

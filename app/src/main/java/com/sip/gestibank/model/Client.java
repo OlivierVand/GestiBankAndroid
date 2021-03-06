@@ -32,6 +32,10 @@ public class Client  {
     @Expose
     private String password;
 
+    @SerializedName("solde")
+    @Expose
+    private String solde;
+
 
     public Client() {
     }
@@ -44,6 +48,7 @@ public class Client  {
         this.role = "CLIENT";
         this.status = "EN ATTENTE";
         this.password = "";
+        this.solde = solde;
     }
 
     public String getName() {
@@ -94,6 +99,14 @@ public class Client  {
         this.password = password;
     }
 
+    public String getSolde() {
+        return solde;
+    }
+
+    public void setSolde(String password) {
+        this.solde = solde;
+    }
+
     @Override
     public String toString()
     {
@@ -104,6 +117,7 @@ public class Client  {
                 ", role='" + role + '\'' +
                 ", status='" + status + '\'' +
                 ", password='" + password + '\'' +
+                ", solde='" + solde + '\'' +
                 '}';
     }
 

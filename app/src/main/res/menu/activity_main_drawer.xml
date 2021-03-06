@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_monetization_on_24"
+            android:title="Mes Comptes"/>
+
+        <item
+            android:id="@+id/nav_virements"
+            android:icon="@drawable/virement_foreground"
+            android:title="Virements" />
+        <item
+            android:id="@+id/nav_carte"
+            android:icon="@drawable/carte_foreground"
+            android:title="Carte bancaire" />
+        <item
+            android:id="@+id/nav_cheque"
+            android:icon="@drawable/cheque_foreground"
+            android:title="Commander un chéquier" />
+        <item
+            android:id="@+id/nav_iban"
+            android:icon="@drawable/idcard_foreground"
+            android:title="Afficher un IBAN/RIB BIC" />
+        <item
+            android:id="@+id/nav_document"
+            android:icon="?attr/actionModeCopyDrawable"
+            android:title="Documents électroniques" />
+        <item
+            android:id="@+id/nav_credit"
+            android:icon="@drawable/creditt_foreground"
+            android:title="Crédit" />
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/agent_foreground"
+            android:title="Contacter mon conseiller" />
+        <item
+            android:id="@+id/nav_assurance"
+            android:icon="@drawable/assurance_foreground"
+            android:title="Assurances" />
+        <item
+            android:id="@+id/nav_reglage"
+            android:icon="@drawable/reglage_foreground"
+            android:title="Profil et réglages" />
+    </group>
+</menu>

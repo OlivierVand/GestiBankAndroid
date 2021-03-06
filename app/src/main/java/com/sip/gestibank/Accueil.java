@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,27 +12,31 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 public class Accueil extends AppCompatActivity {
 
+Button button;
     List<String> region = new ArrayList<String>();
     Spinner spinner;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_accueil);
+
+        button = (Button)findViewById(R.id.buttonAccederCompte);
 
         //Récupération du Spinner déclaré dans le fichier main.xml de res/layout
         spinner = (Spinner) findViewById(R.id.spinnerRegion);
         //Création d'une liste d'élément à mettre dans le Spinner(pour l'exemple)
 
+      region.add("RÉGION");
 
-      region.add("Ile de France");
-      region.add("Bretagne");
-      region.add("Occitanie");
+      region.add("Aquitaine");
       region.add("Auvergne-Rhône-Alpes");
-
-
+      region.add("Bretagne");
+      region.add("Ile de France");
+      region.add("Occitanie");
 
 
 
@@ -54,6 +59,11 @@ public class Accueil extends AppCompatActivity {
 
     public void callSChargement(View view){
         Intent i = new Intent(getApplicationContext(), Login.class);
+        startActivity(i);
+    }
+
+    public void callMain(View view){
+        Intent i = new Intent(getApplicationContext(), MainActivity.class);
         startActivity(i);
     }
 }

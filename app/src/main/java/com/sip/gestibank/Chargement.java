@@ -34,7 +34,7 @@ public class Chargement extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run(){
-                Intent i = new Intent(getApplicationContext(), Comptes.class);
+                Intent i = new Intent(getApplicationContext(), MesComptes.class);
                 startActivity(i);
             }
         }, 3000);

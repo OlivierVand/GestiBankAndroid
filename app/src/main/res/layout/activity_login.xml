@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -8,6 +9,11 @@
     tools:context="com.sip.gestibank.Login"
     android:orientation="vertical">
 
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sip.gestibank.Login"
+    android:orientation="vertical">
     <ImageView
         android:id="@+id/imageViewLogo"
         android:layout_width="175dp"
@@ -109,19 +115,63 @@
         app:backgroundTint="#F7931A" />
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.sip.gestibank.creationCompte"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+
     <Button
         android:id="@+id/buttonTestConnection"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:background="@drawable/rounded_corners"
-        android:layout_gravity="center"
-        android:layout_marginTop="70dp"
+        android:layout_marginLeft="20dp"
         android:onClick="callCompte"
-        android:text="Test"
-        android:textSize="18dp"
+        android:text="Test Client"
+        android:textSize="12dp"
         android:textColor="#FFFFFF"
         app:backgroundTint="#800A4E4E" />
 
+        <Button
+            android:id="@+id/buttonTestAdmin"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_corners"
+            android:layout_marginLeft="90dp"
+            android:onClick="callAdmin"
+            android:text="Test Admin"
+            android:textSize="12dp"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#800A4E4E" />
+
+        <Button
+            android:id="@+id/buttonTestAgent"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/rounded_corners"
+            android:layout_marginLeft="90dp"
+            android:onClick="callAgent"
+            android:text="Test agent"
+            android:textSize="12dp"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#800A4E4E" />
+
+    </LinearLayout>
 
 
-</LinearLayout>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:background="#FAFAFA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="callMain"
+        app:srcCompat="@drawable/ic_baseline_house_24"
+        tools:ignore="VectorDrawableCompat" />
+</androidx.constraintlayout.widget.ConstraintLayout>

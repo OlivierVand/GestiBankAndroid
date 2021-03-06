@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.iban.IbanViewModel">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.sip.gestibank.commandechequier"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="175dp"
+            android:layout_height="126dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/gestibank" />
+
+        <TextView
+            android:id="@+id/textViewCreerCompte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#F7931A"
+            android:text="IBAN/RIB"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/iban" />
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="390dp"
+            android:layout_height="79dp"
+            app:srcCompat="@drawable/ic_baseline_print_24"
+            tools:ignore="VectorDrawableCompat" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

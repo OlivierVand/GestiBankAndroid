@@ -5,9 +5,9 @@ public class APIUtils {
     private APIUtils(){
     };
 
-    public static final String API_URL = "http://192.168.1.22:85/clients/";
+    public static final String API_URL = "http://192.168.42.119:85/clients/";
     public static final String API_CURRENCY = "http://api.currencylayer.com/";
-    public static final String API_AUTH = "http://192.168.1.22:85/";
+    public static final String API_AUTH = "http://192.168.42.119:85/";
 
 
     public static ClientService getClientService(){

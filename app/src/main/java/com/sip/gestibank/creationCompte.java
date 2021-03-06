@@ -49,7 +49,7 @@ public class creationCompte extends AppCompatActivity {
             @Override
             public void onResponse(Call<Client> call, Response<Client> response) {
                 if(response.isSuccessful()){
-                    Toast.makeText(creationCompte.this, "Client created successfully!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(creationCompte.this, "Compte Client crée avec Succès", Toast.LENGTH_SHORT).show();
                     Intent i = new Intent(getApplicationContext(), Accueil.class);
                     startActivity(i);
                 }
@@ -74,6 +74,11 @@ public class creationCompte extends AppCompatActivity {
         builder.setTitle(title);
         builder.setMessage(message);
         builder.show();
+    }
+
+    public void callMain(View view){
+        Intent i = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(i);
     }
 
 }

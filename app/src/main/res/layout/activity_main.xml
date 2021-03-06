@@ -18,17 +18,16 @@
 
     <TextView
         android:id="@+id/textViewBienvenue"
-        android:layout_width="290dp"
-        android:layout_height="67dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:background="#00F7931A"
+        android:background="#F7931A"
         android:fontFamily="arial"
         android:text="BIENVENUE SUR GESTIBANK"
-
         android:textAlignment="center"
-        android:textColor="#F7931A"
-        android:textSize="30sp" />
+        android:textColor="@color/white"
+        android:textSize="24sp" />
 
 
     <Button
@@ -45,7 +44,6 @@
 
     <Button
         android:id="@+id/buttonCreation"
-        android:background="@drawable/rounded_corners"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -53,6 +51,7 @@
         android:layout_marginTop="50dp"
         android:onClick="callSCreationCompte"
         android:text="Créer un compte"
+        android:background="@drawable/rounded_corners"
         app:backgroundTint="#F7931A" />
 
     <Button
@@ -67,16 +66,7 @@
         android:text="Conversion de devise"
         app:backgroundTint="#F7931A" />
 
-    <Button
-        android:id="@+id/buttonTESTADMIN"
-        android:background="@drawable/rounded_corners"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:onClick="callAdmin"
-        android:text="TEST ADMIN"
-        app:backgroundTint="#3274AF" />
+
 
 
 </LinearLayout>

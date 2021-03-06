@@ -12,7 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GestiBank"
         android:usesCleartextTraffic="true">
-        <activity android:name=".CustomListView"></activity>
+        <activity
+            android:name=".MesComptes"
+            android:label="@string/title_activity_mes_comptes"
+            android:theme="@style/Theme.GestiBank.NoActionBar"></activity>
+        <activity android:name=".CustomListView" />
         <activity android:name=".AjouterAgent" />
         <activity android:name=".ListeDemande" />
         <activity android:name=".Agent" />

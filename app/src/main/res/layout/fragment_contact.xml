@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.contact.ContactViewModel">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.sip.gestibank.conseiller"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="175dp"
+            android:layout_height="126dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/gestibank" />
+
+        <TextView
+            android:id="@+id/textViewCreerCompte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="#F7931A"
+            android:text=" MON CONSEILLER"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.sip.gestibank.conseiller"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/amine"
+                android:layout_width="127dp"
+                android:layout_height="121dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/amine" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="100dp"
+                android:layout_weight="1"
+                android:text="Conseiller : Amine Mezghich                                Mail: a.mezghich@gestibank.com                         Tel: 0157359747"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="#F7931A"
+        android:textSize="14dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Prendre Rendez-vous :"></TextView>
+        <CalendarView
+            android:id="@+id/calendrier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+            android:selectedWeekBackgroundColor="#FFC107" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

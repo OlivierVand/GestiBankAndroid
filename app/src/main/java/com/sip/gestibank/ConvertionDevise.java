@@ -1,5 +1,6 @@
 package com.sip.gestibank;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -26,6 +27,7 @@ public class ConvertionDevise extends AppCompatActivity {
 
     EditText myData;
     TextView myRes;
+    TextView myCours;
 
     RadioGroup radioGroup;
     RadioButton radioButton;
@@ -38,6 +40,7 @@ public class ConvertionDevise extends AppCompatActivity {
         myData = (EditText) findViewById(R.id.myInput);
         myRes =(TextView ) findViewById(R.id.textViewRes);
         radioGroup = (RadioGroup) findViewById(R.id.devise);
+        myCours = (TextView) findViewById(R.id.textViewCours);
 
     }
 
@@ -62,7 +65,11 @@ public class ConvertionDevise extends AppCompatActivity {
                     cours = Double.parseDouble(rate);
                     res = cours*input;
                     res = (double)((int)(res*100))/100;
-                    myRes.setText("Résultat conversion = "+Double.valueOf(res).toString());
+                    String devise = to;
+                    myRes.setText("Résultat = "+Double.valueOf(res).toString() + " " + devise);
+                    myCours.setText("Le cours actuel est de : " +Double.valueOf(cours).toString() + " " + "USD/" + devise);
+
+
                 }
             }
 
@@ -72,6 +79,10 @@ public class ConvertionDevise extends AppCompatActivity {
             }
         });
 
+    }
+    public void callMain(View view){
+        Intent i = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(i);
     }
 
 }
